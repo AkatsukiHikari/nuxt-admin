@@ -1,0 +1,75 @@
+@mixin size($size, $unit: 1px) {
+  .pd-#{$size} {
+    padding: $size * $unit;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: $size * $unit;
+  }
+
+  .pt-#{$size} {
+    padding-top: $size * $unit;
+  }
+
+  .pl-#{$size} {
+    padding-left: $size * $unit;
+  }
+
+  .pr-#{$size} {
+    padding-right: $size * $unit;
+  }
+
+  .mg-#{$size} {
+    margin: $size * $unit;
+  }
+
+  .mb-#{$size} {
+    margin-bottom: $size * $unit;
+  }
+
+  .mt-#{$size} {
+    margin-top: $size * $unit;
+  }
+
+  .ml-#{$size} {
+    margin-left: $size * $unit;
+  }
+
+  .mr-#{$size} {
+    margin-right: $size * $unit;
+  }
+
+  .-mg-#{$size} {
+    margin: $size * -$unit;
+  }
+
+  .-mb-#{$size} {
+    margin-bottom: $size * -$unit;
+  }
+
+  .-mt-#{$size} {
+    margin-top: $size * -$unit;
+  }
+
+  .-ml-#{$size} {
+    margin-left: $size * -$unit;
+  }
+
+  .-mr-#{$size} {
+    margin-right: $size * -$unit;
+  }
+
+  .w-#{$size} {
+    width: $size * $unit;
+  }
+
+  .h-#{$size} {
+    height: $size * $unit;
+  }
+}
+
+@mixin color($name, $color) {
+  .#{$name} {
+    color: $color;
+  }
+}
